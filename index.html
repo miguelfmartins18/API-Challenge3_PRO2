@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>API</title>
-		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
-	</head>
-	<body>
 
-		<div id="root"></div>
+<head>
+	<meta charset="utf-8">
+	<title>API</title>
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+</head>
 
-		<script src="scripts/main.js"></script>
-	</body>
+<body>
+
+	<div id="root">
+		<figure>
+			<img src="images/logo.png" alt="ITSLogo">
+		</figure>
+		<nav>
+			<ul class="ul_nav">
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="card">
+				<h1 class="title" id="cityName"></h1>
+				<img src="" id="weatherImg">
+				<div class="weather-content">
+					<p class="text" id="weatherTitle"></p>
+					<p class="text small" id="weatherDesc"></p>
+					<p class="text small" id="weatherTemp"></p>
+					<p class="text small" id="weatherWind"></p>
+					<p class="text small" id="weatherHumid"></p>
+				</div>
+			</div>
+			<div class="card">
+				<h1 class="title" id="meteorTitle"></h1>
+				<p class="text small" id="meteorId"></p>
+				<p class="text small" id="meteorSize"></p>
+				<p class="text small" id="meteorSpeed"></p>
+				<p class="text small" id="meteorDistance"></p>
+				<button onclick="changeMeteor();">Next meteor</button>
+			</div>
+		</div>
+		<div class="container">
+			<div class="card">
+				<h1 class="title"></h1>
+				<p class="text"></p>
+			</div>
+		</div>
+	</div>
+
+	<script src="scripts/main.js"></script>
+</body>
+
 </html>
