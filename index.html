@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>API</title>
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
 </head>
 
@@ -32,17 +32,19 @@
 			</div>
 			<div class="card">
 				<h1 class="title" id="meteorTitle"></h1>
-				<p class="text small" id="meteorId"></p>
-				<p class="text small" id="meteorSize"></p>
-				<p class="text small" id="meteorSpeed"></p>
-				<p class="text small" id="meteorDistance"></p>
-				<button onclick="changeMeteor();">Next meteor</button>
+				<p class="text meteor" id="meteorId"></p>
+				<p class="text meteor" id="meteorSize"></p>
+				<p class="text meteor" id="meteorSpeed"></p>
+				<p class="text meteor" id="meteorDistance"></p>
+				<button onclick="changeMeteor();">More Asteroids</button>
 			</div>
 		</div>
 		<div class="container">
-			<div class="card">
-				<h1 class="title"></h1>
-				<p class="text"></p>
+			<div class="card news">
+				<h1 class="title" id="newsTitle"></h1>
+				<p class="text small news" id="newsSource"></p>
+				<p class="text small news" id="newsHeader"></p>
+				<p class="text small news" id="newsContent"></p>
 			</div>
 		</div>
 	</div>

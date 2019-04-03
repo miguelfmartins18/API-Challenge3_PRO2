@@ -42,6 +42,7 @@ img {
 
 p {
 	margin: .3rem;
+	font-size: 1.5rem;
 }
 
 .container {
@@ -61,6 +62,7 @@ p {
 	padding: 5px;
 	border-radius: 5px;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 
@@ -70,6 +72,10 @@ p {
 	-moz-transition: background-color 0.2s ease-out;
 	-o-transition: background-color 0.2s ease-out;
 	transition: background-color 0.2s ease-out;
+}
+
+.ul_nav a:focus {
+	background-color: #EAEAEA;
 }
 
 li {
@@ -85,6 +91,11 @@ li {
 	overflow: hidden;
 	transition: all .2s linear;
 	flex-grow: 1;
+	padding-bottom: 1.5rem;
+}
+
+.news p {
+	margin: 1rem;
 }
 
 .container:nth-child(2) .card {
@@ -92,10 +103,18 @@ li {
 }
 
 .text .small {
-	font-size: .8rem;
+	font-size: 3rem;
 }
 
-#weatherDesc{
+.meteor {
+	margin: 2rem 2rem 2rem 4rem;
+}
+
+.news {
+	margin: 0 2rem;
+}
+
+#weatherDesc {
 	text-transform: capitalize;
 }
 
@@ -107,10 +126,58 @@ li {
 
 
 .card img {
-	margin: 0 auto 1rem;
+	margin: 4rem 4rem 0 3rem;
 	float: left;
 }
 
 .weather-content {
 	float: left;
+}
+
+#newsSource,#newsHeader{
+	font-weight: 700;
+}
+
+button {
+	background: #ADADAD;
+	color: #fff;
+	border: none;
+	position: relative;
+	height: 30px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: 800ms ease all;
+	outline: none;
+	margin-left: 16rem;
+	border-radius: 1px;
+}
+
+button:hover {
+	background: #fff;
+	color: #1A4758;
+}
+
+button:before,
+button:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #1A4758;
+	transition: 400ms ease all;
+}
+
+button:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
 }
