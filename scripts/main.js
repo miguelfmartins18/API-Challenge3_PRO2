@@ -125,8 +125,7 @@ function getMeteors() {
 
     if (request.status >= 200 && request.status < 400) {
       meteorArrayLength = data.near_earth_objects[createdDateTo].length;
-      meteorTitle.innerHTML =
-        data.near_earth_objects[createdDateTo][meteorIndex].name;
+      meteorTitle.innerHTML = "Name of nearby asteroid: " + data.near_earth_objects[createdDateTo][meteorIndex].name ;
       meteorSize.innerHTML =
         "Diameter: " +
         data.near_earth_objects[createdDateTo][meteorIndex].estimated_diameter
