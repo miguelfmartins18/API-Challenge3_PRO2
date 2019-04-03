@@ -78,6 +78,10 @@ p {
 	background-color: #EAEAEA;
 }
 
+.ul_nav a:active {
+	background-color: #EAEAEA;
+}
+
 li {
 	display: inline-block;
 	margin: 0 5px;
@@ -134,7 +138,8 @@ li {
 	float: left;
 }
 
-#newsSource,#newsHeader{
+#newsSource,
+#newsHeader {
 	font-weight: 700;
 }
 
