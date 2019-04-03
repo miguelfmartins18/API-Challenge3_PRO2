@@ -179,7 +179,7 @@ function getNews(index) {
     var list = data.list;
 
     if (request.status >= 200 && request.status < 400) {
-      newsTitle.innerHTML = "Top news from " + countryName;
+      newsTitle.innerHTML = "Latest news from " + countryName;
 
       newsSource.innerHTML = data.articles[0].source.name;
 
